@@ -19,7 +19,8 @@ function initDB(dbPath) {
                     PRIMARY
                     KEY
                     AUTOINCREMENT,
-                    username TEXT
+                    username TEXT,
+                    credentialId TEXT,
                     publicKey
                     BLOB,
                     webauthnUserID
