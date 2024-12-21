@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAuthn Demo Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="icon" href="/icon2.ico" type="image/x-icon">
+</head>
+<body>
+
+<h1 class="head">WebAuthn Demo Page</h1>
+<div class="container">
+
+    <input id="usernameinput" type="text" class="input" placeholder="Логин">
+    <button class="button" id="5" >Войти</button>
+</div>
+<div class="popup success" id="successPopup">
+    <p>Вы успешно вошли!</p>
+    <button id="btn-pop-suc" class="button" onclick="location.href = '/secret'">Секретная страница</button>
+</div>
+<div class="popup error" id="errorPopup">
+    <p>Не удалось войти!</p>
+    <button id="btn-pop-err"  class="button" onclick="closePopup('errorPopup')">Закрыть</button>
+</div>
+<div class="popup error" id="not_user">
+    <p>Пользователя с таким именем не существут</p>
+    <button id="user_not"  class="button" onclick="closePopup('not_user')">Закрыть</button>
+</div>
+<div class="popup error" id="unknown">
+    <p>Неизвестная ошибка, повторите попытку позже!</p>
+    <button id="error" class="button" onclick="closePopup('unknown')">Закрыть</button>
+</div>
+<script src="./sources/auth.js"></script>
+
+
+
+</body>
+</html>

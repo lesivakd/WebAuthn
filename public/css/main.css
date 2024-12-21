@@ -1,0 +1,128 @@
+body {
+  background-color: #F9CFCF;
+  font-family: 'Aclonica', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden
+}
+
+h1 {
+  color: #D68080;
+  font-size: 96px;
+  text-shadow: 0px 2px 2px #000000;
+  text-align: center;
+}
+
+.head {
+  position: fixed;
+  top: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 40px; /* Начальное значение для мобильных устройств */
+  margin-top: 20px; /* Отступ сверху для кнопок */
+}
+
+.action-button {
+  background-color: #D68080;
+  padding: 15px 30px; /* Уменьшены отступы для кнопок */
+  font-size: 24px; /* Уменьшен размер шрифта для кнопок */
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+  border-radius: 5px;
+  color: white;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+  background-color: #c05c5c;
+}
+
+/* Медиазапросы для адаптивности */
+@media (min-width: 600px) {
+  .button-container {
+    gap: 450px; /* Увеличенное расстояние между кнопками на компьютере */
+  }
+
+  h1 {
+    font-size: 96px; /* Размер заголовка для компьютера */
+  }
+
+  .action-button {
+    font-size: 30px; /* Размер шрифта для кнопок на компьютере */
+    padding: 25px 50px; /* Отступы для кнопок на компьютере */
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 48px; /* Уменьшаем размер заголовка для мобильных устройств */
+  }
+
+  .action-button {
+    font-size: 20px; /* Уменьшаем размер шрифта кнопок для мобильных устройств */
+    padding: 10px 20px; /* Уменьшаем отступы для кнопок на мобильных */
+  }
+}
+
+
+
+
+
+
+
+/*body {*/
+/*  background-color: #F9CFCF;*/
+/*  font-family: 'Aclonica', sans-serif;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  min-height: 100vh;*/
+/*  margin: 0;*/
+/*}*/
+
+/*h1 {*/
+/*  color: #D68080;*/
+/*  font-size: 96px;*/
+/*  text-shadow: 0px 2px 2px #000000;*/
+
+/*}*/
+
+/*.head{*/
+/*position: fixed;*/
+/*  top: 1%;*/
+/*}*/
+
+/*.button-container {*/
+/*  display: flex;*/
+/*  gap: 450px;*/
+
+/*}*/
+
+/*.action-button {*/
+/*  background-color: #D68080;*/
+/*  padding: 25px 50px;*/
+/*  font-size: 30px;*/
+/*  border: none;*/
+/*  cursor: pointer;*/
+/*  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);*/
+/*  transition: transform 0.2s;*/
+/*  border-radius: 5px;*/
+/*  color: white;*/
+
+/*}*/
+
+/*.action-button:hover {*/
+/*  transform: scale(1.05);*/
+/*  background-color: #c05c5c;*/
+/*}*/

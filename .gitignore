@@ -1,0 +1,5 @@
+node_modules
+database.db
+.idea
+apache-selfsigned.crt
+apache-selfsigned.key
